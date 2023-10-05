@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.nayaragaspar.lancamentos.model.entity.Transacao;
 import com.nayaragaspar.lancamentos.service.TransacaoService;
 
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -19,6 +20,7 @@ import lombok.RequiredArgsConstructor;
 public class TransacaoController {
     private final TransacaoService transacaoService;
 
+    @Operation(summary = "Buscar transação por ID")
     @GetMapping("/{id}")
     public ResponseEntity<Transacao> findById(@PathVariable UUID id) {
         return ResponseEntity.ok(transacaoService.findById(id));
