@@ -1,0 +1,501 @@
+2023-10-05T09:42:09.889-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Starting LancamentosApplication using Java 17.0.7 with PID 32684 (D:\Nayara\lancamentos\target\classes started by nayarag in D:\Nayara\lancamentos)
+2023-10-05T09:42:09.899-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T09:42:09.946-03:00  INFO 32684 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-05T09:42:09.946-03:00  INFO 32684 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-05T09:42:11.290-03:00  INFO 32684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T09:42:11.370-03:00  INFO 32684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 3 JPA repository interfaces.
+2023-10-05T09:42:12.097-03:00  INFO 32684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T09:42:12.110-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T09:42:12.111-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T09:42:12.242-03:00  INFO 32684 --- [restartedMain] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T09:42:12.243-03:00  INFO 32684 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2296 ms
+2023-10-05T09:42:12.369-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Starting...
+2023-10-05T09:42:12.627-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : lancamentos - Added connection conn0: url=jdbc:h2:mem:lancamentos user=SA
+2023-10-05T09:42:12.629-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Start completed.
+2023-10-05T09:42:12.641-03:00  INFO 32684 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:lancamentos'
+2023-10-05T09:42:12.839-03:00  INFO 32684 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T09:42:12.920-03:00  INFO 32684 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-05T09:42:12.924-03:00  INFO 32684 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-05T09:42:13.153-03:00  INFO 32684 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T09:42:13.367-03:00  INFO 32684 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T09:42:13.693-03:00  INFO 32684 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T09:42:14.202-03:00  INFO 32684 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T09:42:14.263-03:00  INFO 32684 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T09:42:14.566-03:00  INFO 32684 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-10-05T09:42:15.301-03:00  WARN 32684 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T09:42:16.223-03:00  INFO 32684 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T09:42:16.231-03:00  INFO 32684 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-05T09:42:16.340-03:00  INFO 32684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/lancamentos'
+2023-10-05T09:42:16.355-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Started LancamentosApplication in 6.754 seconds (process running for 7.608)
+2023-10-05T09:42:18.637-03:00  INFO 32684 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T09:42:18.638-03:00  INFO 32684 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T09:42:18.639-03:00  INFO 32684 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-05T09:42:30.064-03:00  INFO 32684 --- [http-nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 307 ms
+2023-10-05T09:45:49.844-03:00  INFO 32684 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-10-05T09:45:49.856-03:00  INFO 32684 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T09:45:49.858-03:00  INFO 32684 --- [Thread-5] o.a.c.c.C.[.[localhost].[/lancamentos]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-05T09:45:49.867-03:00  INFO 32684 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T09:45:50.077-03:00  WARN 32684 --- [Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-05T09:45:50.078-03:00  INFO 32684 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : lancamentos - Shutdown initiated...
+2023-10-05T09:45:50.079-03:00  INFO 32684 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : lancamentos - Shutdown completed.
+2023-10-05T09:45:50.150-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Starting LancamentosApplication using Java 17.0.7 with PID 32684 (D:\Nayara\lancamentos\target\classes started by nayarag in D:\Nayara\lancamentos)
+2023-10-05T09:45:50.150-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T09:45:50.476-03:00  INFO 32684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T09:45:50.499-03:00  INFO 32684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2023-10-05T09:45:50.604-03:00  INFO 32684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T09:45:50.605-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T09:45:50.606-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T09:45:50.666-03:00  INFO 32684 --- [restartedMain] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T09:45:50.667-03:00  INFO 32684 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 515 ms
+2023-10-05T09:45:50.696-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Starting...
+2023-10-05T09:45:50.702-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : lancamentos - Added connection conn10: url=jdbc:h2:mem:lancamentos user=SA
+2023-10-05T09:45:50.702-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Start completed.
+2023-10-05T09:45:50.703-03:00  INFO 32684 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:lancamentos'
+2023-10-05T09:45:50.740-03:00  INFO 32684 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T09:45:50.747-03:00  INFO 32684 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T09:45:50.748-03:00  INFO 32684 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T09:45:50.771-03:00  INFO 32684 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T09:45:50.834-03:00  INFO 32684 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T09:45:50.847-03:00  INFO 32684 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T09:45:50.993-03:00  WARN 32684 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T09:45:51.182-03:00  INFO 32684 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T09:45:51.186-03:00  INFO 32684 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-05T09:45:51.210-03:00  INFO 32684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/lancamentos'
+2023-10-05T09:45:51.219-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Started LancamentosApplication in 1.099 seconds (process running for 222.475)
+2023-10-05T09:45:51.224-03:00  INFO 32684 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T09:45:56.672-03:00  INFO 32684 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-10-05T09:45:56.680-03:00  INFO 32684 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T09:45:56.683-03:00  INFO 32684 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T09:45:56.891-03:00  WARN 32684 --- [Thread-7] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-05T09:45:56.892-03:00  INFO 32684 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : lancamentos - Shutdown initiated...
+2023-10-05T09:45:56.893-03:00  INFO 32684 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : lancamentos - Shutdown completed.
+2023-10-05T09:45:56.956-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Starting LancamentosApplication using Java 17.0.7 with PID 32684 (D:\Nayara\lancamentos\target\classes started by nayarag in D:\Nayara\lancamentos)
+2023-10-05T09:45:56.957-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T09:45:57.164-03:00  INFO 32684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T09:45:57.182-03:00  INFO 32684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 3 JPA repository interfaces.
+2023-10-05T09:45:57.239-03:00  INFO 32684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T09:45:57.240-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T09:45:57.240-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T09:45:57.283-03:00  INFO 32684 --- [restartedMain] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T09:45:57.283-03:00  INFO 32684 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 325 ms
+2023-10-05T09:45:57.299-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Starting...
+2023-10-05T09:45:57.301-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : lancamentos - Added connection conn20: url=jdbc:h2:mem:lancamentos user=SA
+2023-10-05T09:45:57.302-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Start completed.
+2023-10-05T09:45:57.302-03:00  INFO 32684 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:lancamentos'
+2023-10-05T09:45:57.324-03:00  INFO 32684 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T09:45:57.328-03:00  INFO 32684 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T09:45:57.329-03:00  INFO 32684 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T09:45:57.341-03:00  INFO 32684 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T09:45:57.371-03:00  INFO 32684 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T09:45:57.378-03:00  INFO 32684 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T09:45:57.458-03:00  WARN 32684 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T09:45:57.555-03:00  INFO 32684 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T09:45:57.557-03:00  INFO 32684 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-05T09:45:57.570-03:00  INFO 32684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/lancamentos'
+2023-10-05T09:45:57.574-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Started LancamentosApplication in 0.643 seconds (process running for 228.829)
+2023-10-05T09:45:57.576-03:00  INFO 32684 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T09:46:06.113-03:00  INFO 32684 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T09:46:06.121-03:00  INFO 32684 --- [Thread-12] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T09:46:06.124-03:00  INFO 32684 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T09:46:06.331-03:00  WARN 32684 --- [Thread-12] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-05T09:46:06.332-03:00  INFO 32684 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : lancamentos - Shutdown initiated...
+2023-10-05T09:46:06.332-03:00  INFO 32684 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : lancamentos - Shutdown completed.
+2023-10-05T09:46:06.399-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Starting LancamentosApplication using Java 17.0.7 with PID 32684 (D:\Nayara\lancamentos\target\classes started by nayarag in D:\Nayara\lancamentos)
+2023-10-05T09:46:06.399-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T09:46:06.606-03:00  INFO 32684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T09:46:06.624-03:00  INFO 32684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 3 JPA repository interfaces.
+2023-10-05T09:46:06.677-03:00  INFO 32684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T09:46:06.678-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T09:46:06.678-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T09:46:06.720-03:00  INFO 32684 --- [restartedMain] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T09:46:06.721-03:00  INFO 32684 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 320 ms
+2023-10-05T09:46:06.734-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Starting...
+2023-10-05T09:46:06.736-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : lancamentos - Added connection conn30: url=jdbc:h2:mem:lancamentos user=SA
+2023-10-05T09:46:06.736-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Start completed.
+2023-10-05T09:46:06.736-03:00  INFO 32684 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:lancamentos'
+2023-10-05T09:46:06.756-03:00  INFO 32684 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T09:46:06.761-03:00  INFO 32684 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T09:46:06.761-03:00  INFO 32684 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T09:46:06.772-03:00  INFO 32684 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T09:46:06.800-03:00  INFO 32684 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T09:46:06.807-03:00  INFO 32684 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T09:46:06.884-03:00  WARN 32684 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T09:46:06.971-03:00  INFO 32684 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T09:46:06.973-03:00  INFO 32684 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-05T09:46:06.986-03:00  INFO 32684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/lancamentos'
+2023-10-05T09:46:06.991-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Started LancamentosApplication in 0.616 seconds (process running for 238.246)
+2023-10-05T09:46:06.992-03:00  INFO 32684 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T09:46:09.441-03:00  INFO 32684 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T09:46:09.449-03:00  INFO 32684 --- [Thread-16] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T09:46:09.452-03:00  INFO 32684 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T09:46:09.658-03:00  WARN 32684 --- [Thread-16] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-05T09:46:09.659-03:00  INFO 32684 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : lancamentos - Shutdown initiated...
+2023-10-05T09:46:09.660-03:00  INFO 32684 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : lancamentos - Shutdown completed.
+2023-10-05T09:46:09.725-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Starting LancamentosApplication using Java 17.0.7 with PID 32684 (D:\Nayara\lancamentos\target\classes started by nayarag in D:\Nayara\lancamentos)
+2023-10-05T09:46:09.726-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T09:46:09.920-03:00  INFO 32684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T09:46:09.937-03:00  INFO 32684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 3 JPA repository interfaces.
+2023-10-05T09:46:10.000-03:00  INFO 32684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T09:46:10.001-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T09:46:10.001-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T09:46:10.043-03:00  INFO 32684 --- [restartedMain] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T09:46:10.044-03:00  INFO 32684 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 317 ms
+2023-10-05T09:46:10.061-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Starting...
+2023-10-05T09:46:10.063-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : lancamentos - Added connection conn40: url=jdbc:h2:mem:lancamentos user=SA
+2023-10-05T09:46:10.063-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Start completed.
+2023-10-05T09:46:10.063-03:00  INFO 32684 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:lancamentos'
+2023-10-05T09:46:10.081-03:00  INFO 32684 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T09:46:10.085-03:00  INFO 32684 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T09:46:10.086-03:00  INFO 32684 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T09:46:10.096-03:00  INFO 32684 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T09:46:10.121-03:00  INFO 32684 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T09:46:10.127-03:00  INFO 32684 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T09:46:10.202-03:00  WARN 32684 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T09:46:10.290-03:00  INFO 32684 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T09:46:10.292-03:00  INFO 32684 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-05T09:46:10.310-03:00  INFO 32684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/lancamentos'
+2023-10-05T09:46:10.314-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Started LancamentosApplication in 0.612 seconds (process running for 241.57)
+2023-10-05T09:46:10.316-03:00  INFO 32684 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T09:46:32.086-03:00  INFO 32684 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T09:46:32.094-03:00  INFO 32684 --- [Thread-20] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T09:46:32.097-03:00  INFO 32684 --- [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T09:46:32.306-03:00  WARN 32684 --- [Thread-20] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-05T09:46:32.307-03:00  INFO 32684 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : lancamentos - Shutdown initiated...
+2023-10-05T09:46:32.308-03:00  INFO 32684 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : lancamentos - Shutdown completed.
+2023-10-05T09:46:32.417-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Starting LancamentosApplication using Java 17.0.7 with PID 32684 (D:\Nayara\lancamentos\target\classes started by nayarag in D:\Nayara\lancamentos)
+2023-10-05T09:46:32.418-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T09:46:32.638-03:00  INFO 32684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T09:46:32.655-03:00  INFO 32684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 3 JPA repository interfaces.
+2023-10-05T09:46:32.704-03:00  INFO 32684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T09:46:32.705-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T09:46:32.705-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T09:46:32.744-03:00  INFO 32684 --- [restartedMain] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T09:46:32.745-03:00  INFO 32684 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 325 ms
+2023-10-05T09:46:32.760-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Starting...
+2023-10-05T09:46:32.762-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : lancamentos - Added connection conn50: url=jdbc:h2:mem:lancamentos user=SA
+2023-10-05T09:46:32.762-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Start completed.
+2023-10-05T09:46:32.762-03:00  INFO 32684 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:lancamentos'
+2023-10-05T09:46:32.782-03:00  INFO 32684 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T09:46:32.786-03:00  INFO 32684 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T09:46:32.787-03:00  INFO 32684 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T09:46:32.798-03:00  INFO 32684 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T09:46:32.825-03:00  INFO 32684 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T09:46:32.831-03:00  INFO 32684 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T09:46:32.882-03:00  WARN 32684 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contaController' defined in file [D:\Nayara\lancamentos\target\classes\com\nayaragaspar\lancamentos\controller\ContaController.class]: Failed to instantiate [com.nayaragaspar.lancamentos.controller.ContaController]: Constructor threw exception
+2023-10-05T09:46:32.883-03:00  INFO 32684 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T09:46:33.085-03:00  WARN 32684 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-05T09:46:33.086-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Shutdown initiated...
+2023-10-05T09:46:33.241-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Shutdown completed.
+2023-10-05T09:46:33.242-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T09:46:33.248-03:00  INFO 32684 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-05T09:46:33.261-03:00 ERROR 32684 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contaController' defined in file [D:\Nayara\lancamentos\target\classes\com\nayaragaspar\lancamentos\controller\ContaController.class]: Failed to instantiate [com.nayaragaspar.lancamentos.controller.ContaController]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.12.jar:6.0.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) ~[spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309) ~[spring-boot-3.1.4.jar:3.1.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298) ~[spring-boot-3.1.4.jar:3.1.4]
+	at com.nayaragaspar.lancamentos.LancamentosApplication.main(LancamentosApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.4.jar:3.1.4]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.nayaragaspar.lancamentos.controller.ContaController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:110) ~[spring-beans-6.0.12.jar:6.0.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-6.0.12.jar:6.0.12]
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error, insert "Identifier (" to complete ConstructorHeaderName
+	Syntax error, insert ")" to complete ConstructorDeclaration
+	Syntax error, insert ";" to complete ConstructorDeclaration
+	Syntax error on token "<", ? expected after this token
+	Return type for the method is missing
+
+	at com.nayaragaspar.lancamentos.controller.ContaController.<init>(ContaController.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-6.0.12.jar:6.0.12]
+	... 26 common frames omitted
+
+2023-10-05T09:46:34.725-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Starting LancamentosApplication using Java 17.0.7 with PID 32684 (D:\Nayara\lancamentos\target\classes started by nayarag in D:\Nayara\lancamentos)
+2023-10-05T09:46:34.725-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T09:46:34.911-03:00  INFO 32684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T09:46:34.927-03:00  INFO 32684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 3 JPA repository interfaces.
+2023-10-05T09:46:34.980-03:00  INFO 32684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T09:46:34.981-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T09:46:34.981-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T09:46:35.026-03:00  INFO 32684 --- [restartedMain] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T09:46:35.026-03:00  INFO 32684 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 299 ms
+2023-10-05T09:46:35.039-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Starting...
+2023-10-05T09:46:35.040-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : lancamentos - Added connection conn53: url=jdbc:h2:mem:lancamentos user=SA
+2023-10-05T09:46:35.040-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Start completed.
+2023-10-05T09:46:35.041-03:00  INFO 32684 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:lancamentos'
+2023-10-05T09:46:35.059-03:00  INFO 32684 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T09:46:35.063-03:00  INFO 32684 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T09:46:35.063-03:00  INFO 32684 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T09:46:35.074-03:00  INFO 32684 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T09:46:35.096-03:00  INFO 32684 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T09:46:35.102-03:00  INFO 32684 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T09:46:35.162-03:00  WARN 32684 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T09:46:35.294-03:00  INFO 32684 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T09:46:35.297-03:00  INFO 32684 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-05T09:46:35.322-03:00  INFO 32684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/lancamentos'
+2023-10-05T09:46:35.327-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Started LancamentosApplication in 0.627 seconds (process running for 266.582)
+2023-10-05T09:46:35.329-03:00  INFO 32684 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T09:46:37.160-03:00  INFO 32684 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T09:46:37.168-03:00  INFO 32684 --- [Thread-24] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T09:46:37.171-03:00  INFO 32684 --- [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T09:46:37.376-03:00  WARN 32684 --- [Thread-24] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-05T09:46:37.376-03:00  INFO 32684 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : lancamentos - Shutdown initiated...
+2023-10-05T09:46:37.377-03:00  INFO 32684 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : lancamentos - Shutdown completed.
+2023-10-05T09:46:37.448-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Starting LancamentosApplication using Java 17.0.7 with PID 32684 (D:\Nayara\lancamentos\target\classes started by nayarag in D:\Nayara\lancamentos)
+2023-10-05T09:46:37.449-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T09:46:37.627-03:00  INFO 32684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T09:46:37.642-03:00  INFO 32684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2023-10-05T09:46:37.692-03:00  INFO 32684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T09:46:37.692-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T09:46:37.693-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T09:46:37.731-03:00  INFO 32684 --- [restartedMain] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T09:46:37.731-03:00  INFO 32684 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 281 ms
+2023-10-05T09:46:37.743-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Starting...
+2023-10-05T09:46:37.744-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : lancamentos - Added connection conn63: url=jdbc:h2:mem:lancamentos user=SA
+2023-10-05T09:46:37.745-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Start completed.
+2023-10-05T09:46:37.745-03:00  INFO 32684 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:lancamentos'
+2023-10-05T09:46:37.761-03:00  INFO 32684 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T09:46:37.764-03:00  INFO 32684 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T09:46:37.764-03:00  INFO 32684 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T09:46:37.774-03:00  INFO 32684 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T09:46:37.795-03:00  INFO 32684 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T09:46:37.801-03:00  INFO 32684 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T09:46:37.866-03:00  WARN 32684 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T09:46:37.945-03:00  INFO 32684 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T09:46:37.947-03:00  INFO 32684 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-05T09:46:37.960-03:00  INFO 32684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/lancamentos'
+2023-10-05T09:46:37.970-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Started LancamentosApplication in 0.544 seconds (process running for 269.226)
+2023-10-05T09:46:37.973-03:00  INFO 32684 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T09:46:39.398-03:00  INFO 32684 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-05T09:46:39.407-03:00  INFO 32684 --- [Thread-31] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-05T09:46:39.409-03:00  INFO 32684 --- [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T09:46:39.614-03:00  WARN 32684 --- [Thread-31] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-05T09:46:39.615-03:00  INFO 32684 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : lancamentos - Shutdown initiated...
+2023-10-05T09:46:39.616-03:00  INFO 32684 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : lancamentos - Shutdown completed.
+2023-10-05T09:46:39.691-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Starting LancamentosApplication using Java 17.0.7 with PID 32684 (D:\Nayara\lancamentos\target\classes started by nayarag in D:\Nayara\lancamentos)
+2023-10-05T09:46:39.692-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T09:46:39.858-03:00  INFO 32684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T09:46:39.873-03:00  INFO 32684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2023-10-05T09:46:39.926-03:00  INFO 32684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T09:46:39.927-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T09:46:39.927-03:00  INFO 32684 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T09:46:39.972-03:00  INFO 32684 --- [restartedMain] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T09:46:39.972-03:00  INFO 32684 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 279 ms
+2023-10-05T09:46:39.985-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Starting...
+2023-10-05T09:46:39.988-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : lancamentos - Added connection conn73: url=jdbc:h2:mem:lancamentos user=SA
+2023-10-05T09:46:39.988-03:00  INFO 32684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Start completed.
+2023-10-05T09:46:39.988-03:00  INFO 32684 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:lancamentos'
+2023-10-05T09:46:40.013-03:00  INFO 32684 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T09:46:40.017-03:00  INFO 32684 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T09:46:40.017-03:00  INFO 32684 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T09:46:40.030-03:00  INFO 32684 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T09:46:40.054-03:00  INFO 32684 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T09:46:40.060-03:00  INFO 32684 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T09:46:40.133-03:00  WARN 32684 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T09:46:40.228-03:00  INFO 32684 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T09:46:40.230-03:00  INFO 32684 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-05T09:46:40.243-03:00  INFO 32684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/lancamentos'
+2023-10-05T09:46:40.248-03:00  INFO 32684 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Started LancamentosApplication in 0.581 seconds (process running for 271.504)
+2023-10-05T09:46:40.249-03:00  INFO 32684 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-05T09:47:13.721-03:00  INFO 32684 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T09:47:13.722-03:00  INFO 32684 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T09:47:13.723-03:00  INFO 32684 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-05T09:47:48.404-03:00  WARN 32684 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.nayaragaspar.lancamentos.exception.NotFoundException: Conta não encontrado]
+2023-10-05T09:48:08.742-03:00  WARN 32684 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.nayaragaspar.lancamentos.exception.NotFoundException: Conta não encontrado]
+2023-10-05T09:48:40.287-03:00  WARN 32684 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.nayaragaspar.lancamentos.exception.NotFoundException: Conta não encontrado]
+2023-10-05T10:07:56.698-03:00  INFO 20204 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Starting LancamentosApplication using Java 17.0.7 with PID 20204 (D:\Nayara\lancamentos\target\classes started by nayarag in D:\Nayara\lancamentos)
+2023-10-05T10:07:56.700-03:00  INFO 20204 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T10:07:56.742-03:00  INFO 20204 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-05T10:07:56.743-03:00  INFO 20204 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-05T10:07:57.564-03:00  INFO 20204 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T10:07:57.633-03:00  INFO 20204 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 3 JPA repository interfaces.
+2023-10-05T10:07:58.279-03:00  INFO 20204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T10:07:58.295-03:00  INFO 20204 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T10:07:58.296-03:00  INFO 20204 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T10:07:58.423-03:00  INFO 20204 --- [restartedMain] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T10:07:58.424-03:00  INFO 20204 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1681 ms
+2023-10-05T10:07:58.556-03:00  INFO 20204 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Starting...
+2023-10-05T10:07:58.760-03:00  INFO 20204 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : lancamentos - Added connection conn0: url=jdbc:h2:mem:lancamentos user=SA
+2023-10-05T10:07:58.762-03:00  INFO 20204 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Start completed.
+2023-10-05T10:07:58.774-03:00  INFO 20204 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:lancamentos'
+2023-10-05T10:07:59.023-03:00  INFO 20204 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T10:07:59.094-03:00  INFO 20204 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-05T10:07:59.097-03:00  INFO 20204 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-05T10:07:59.300-03:00  INFO 20204 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T10:07:59.458-03:00  INFO 20204 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T10:07:59.754-03:00  INFO 20204 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T10:08:00.284-03:00  INFO 20204 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T10:08:00.336-03:00  INFO 20204 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T10:08:00.595-03:00  INFO 20204 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-10-05T10:08:01.110-03:00  WARN 20204 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T10:08:01.879-03:00  INFO 20204 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T10:08:01.886-03:00  INFO 20204 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-05T10:08:01.997-03:00  INFO 20204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/lancamentos'
+2023-10-05T10:08:02.011-03:00  INFO 20204 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Started LancamentosApplication in 5.594 seconds (process running for 6.343)
+2023-10-05T10:08:02.332-03:00  INFO 20204 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T10:08:02.333-03:00  INFO 20204 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T10:08:02.334-03:00  INFO 20204 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-10-05T10:09:23.314-03:00  WARN 20204 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.nayaragaspar.lancamentos.exception.NotFoundException: Conta não encontrado]
+2023-10-05T10:13:58.433-03:00  INFO 15724 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Starting LancamentosApplication using Java 17.0.7 with PID 15724 (D:\Nayara\lancamentos\target\classes started by nayarag in D:\Nayara\lancamentos)
+2023-10-05T10:13:58.437-03:00  INFO 15724 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T10:13:58.483-03:00  INFO 15724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-05T10:13:58.483-03:00  INFO 15724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-05T10:13:59.462-03:00  INFO 15724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T10:13:59.532-03:00  INFO 15724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 3 JPA repository interfaces.
+2023-10-05T10:14:00.177-03:00  INFO 15724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T10:14:00.192-03:00  INFO 15724 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T10:14:00.192-03:00  INFO 15724 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T10:14:00.320-03:00  INFO 15724 --- [restartedMain] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T10:14:00.321-03:00  INFO 15724 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1836 ms
+2023-10-05T10:14:00.455-03:00  INFO 15724 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Starting...
+2023-10-05T10:14:00.708-03:00  INFO 15724 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : lancamentos - Added connection conn0: url=jdbc:h2:mem:lancamentos user=SA
+2023-10-05T10:14:00.711-03:00  INFO 15724 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Start completed.
+2023-10-05T10:14:00.727-03:00  INFO 15724 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:lancamentos'
+2023-10-05T10:14:00.972-03:00  INFO 15724 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T10:14:01.059-03:00  INFO 15724 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-05T10:14:01.061-03:00  INFO 15724 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-05T10:14:01.243-03:00  INFO 15724 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T10:14:01.408-03:00  INFO 15724 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T10:14:01.703-03:00  INFO 15724 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T10:14:02.177-03:00  INFO 15724 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T10:14:02.231-03:00  INFO 15724 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T10:14:02.457-03:00  INFO 15724 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-10-05T10:14:02.951-03:00  WARN 15724 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T10:14:03.726-03:00  INFO 15724 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T10:14:03.732-03:00  INFO 15724 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-05T10:14:03.846-03:00  INFO 15724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/lancamentos'
+2023-10-05T10:14:03.862-03:00  INFO 15724 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Started LancamentosApplication in 5.711 seconds (process running for 6.509)
+2023-10-05T10:14:04.073-03:00  INFO 15724 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T10:14:04.073-03:00  INFO 15724 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T10:14:04.074-03:00  INFO 15724 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-10-05T10:15:50.026-03:00  INFO 2932 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Starting LancamentosApplication using Java 17.0.7 with PID 2932 (D:\Nayara\lancamentos\target\classes started by nayarag in D:\Nayara\lancamentos)
+2023-10-05T10:15:50.028-03:00  INFO 2932 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T10:15:50.069-03:00  INFO 2932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-05T10:15:50.069-03:00  INFO 2932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-05T10:15:50.971-03:00  INFO 2932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T10:15:51.055-03:00  INFO 2932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 3 JPA repository interfaces.
+2023-10-05T10:15:51.755-03:00  INFO 2932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T10:15:51.768-03:00  INFO 2932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T10:15:51.769-03:00  INFO 2932 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T10:15:51.915-03:00  INFO 2932 --- [restartedMain] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T10:15:51.916-03:00  INFO 2932 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1846 ms
+2023-10-05T10:15:52.058-03:00  INFO 2932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Starting...
+2023-10-05T10:15:52.281-03:00  INFO 2932 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : lancamentos - Added connection conn0: url=jdbc:h2:mem:lancamentos user=SA
+2023-10-05T10:15:52.284-03:00  INFO 2932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Start completed.
+2023-10-05T10:15:52.295-03:00  INFO 2932 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:lancamentos'
+2023-10-05T10:15:52.519-03:00  INFO 2932 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T10:15:52.583-03:00  INFO 2932 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-05T10:15:52.589-03:00  INFO 2932 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-05T10:15:52.771-03:00  INFO 2932 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T10:15:52.909-03:00  INFO 2932 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T10:15:53.215-03:00  INFO 2932 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T10:15:53.708-03:00  INFO 2932 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T10:15:53.760-03:00  INFO 2932 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T10:15:54.035-03:00  INFO 2932 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-10-05T10:15:54.566-03:00  WARN 2932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T10:15:55.322-03:00  INFO 2932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T10:15:55.326-03:00  INFO 2932 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-05T10:15:55.412-03:00  INFO 2932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/lancamentos'
+2023-10-05T10:15:55.430-03:00  INFO 2932 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Started LancamentosApplication in 5.678 seconds (process running for 6.527)
+2023-10-05T10:15:55.659-03:00  INFO 2932 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T10:15:55.660-03:00  INFO 2932 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T10:15:55.661-03:00  INFO 2932 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-05T10:17:27.599-03:00  INFO 2932 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T10:17:27.818-03:00  WARN 2932 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-10-05T10:17:27.819-03:00  INFO 2932 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : lancamentos - Shutdown initiated...
+2023-10-05T10:17:27.820-03:00  INFO 2932 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : lancamentos - Shutdown completed.
+2023-10-05T10:33:29.347-03:00  INFO 30940 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Starting LancamentosApplication using Java 17.0.7 with PID 30940 (D:\Nayara\lancamentos\target\classes started by nayarag in D:\Nayara\lancamentos)
+2023-10-05T10:33:29.349-03:00  INFO 30940 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T10:33:29.393-03:00  INFO 30940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-05T10:33:29.394-03:00  INFO 30940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-05T10:33:30.441-03:00  INFO 30940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T10:33:30.515-03:00  INFO 30940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 3 JPA repository interfaces.
+2023-10-05T10:33:31.231-03:00  INFO 30940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T10:33:31.243-03:00  INFO 30940 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T10:33:31.243-03:00  INFO 30940 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T10:33:31.367-03:00  INFO 30940 --- [restartedMain] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T10:33:31.367-03:00  INFO 30940 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1972 ms
+2023-10-05T10:33:31.498-03:00  INFO 30940 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Starting...
+2023-10-05T10:33:31.700-03:00  INFO 30940 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : lancamentos - Added connection conn0: url=jdbc:h2:mem:lancamentos user=SA
+2023-10-05T10:33:31.702-03:00  INFO 30940 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Start completed.
+2023-10-05T10:33:31.714-03:00  INFO 30940 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:lancamentos'
+2023-10-05T10:33:31.892-03:00  INFO 30940 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T10:33:31.966-03:00  INFO 30940 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-05T10:33:31.970-03:00  INFO 30940 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-05T10:33:32.164-03:00  INFO 30940 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T10:33:32.347-03:00  INFO 30940 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T10:33:32.687-03:00  INFO 30940 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T10:33:33.215-03:00  INFO 30940 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T10:33:33.264-03:00  INFO 30940 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T10:33:33.506-03:00  INFO 30940 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-10-05T10:33:34.119-03:00  WARN 30940 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T10:33:34.888-03:00  INFO 30940 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T10:33:34.897-03:00  INFO 30940 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-05T10:33:35.018-03:00  INFO 30940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/lancamentos'
+2023-10-05T10:33:35.037-03:00  INFO 30940 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Started LancamentosApplication in 5.978 seconds (process running for 6.77)
+2023-10-05T10:33:35.042-03:00  INFO 30940 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T10:33:35.042-03:00  INFO 30940 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T10:33:35.044-03:00  INFO 30940 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-05T10:43:31.528-03:00  INFO 7708 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Starting LancamentosApplication using Java 17.0.7 with PID 7708 (D:\Nayara\lancamentos\target\classes started by nayarag in D:\Nayara\lancamentos)
+2023-10-05T10:43:31.531-03:00  INFO 7708 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-05T10:43:31.569-03:00  INFO 7708 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-05T10:43:31.569-03:00  INFO 7708 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-05T10:43:32.448-03:00  INFO 7708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-05T10:43:32.513-03:00  INFO 7708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2023-10-05T10:43:33.170-03:00  INFO 7708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-05T10:43:33.186-03:00  INFO 7708 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-05T10:43:33.187-03:00  INFO 7708 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-05T10:43:33.327-03:00  INFO 7708 --- [restartedMain] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring embedded WebApplicationContext
+2023-10-05T10:43:33.328-03:00  INFO 7708 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1758 ms
+2023-10-05T10:43:33.480-03:00  INFO 7708 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Starting...
+2023-10-05T10:43:33.718-03:00  INFO 7708 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : lancamentos - Added connection conn0: url=jdbc:h2:mem:lancamentos user=SA
+2023-10-05T10:43:33.724-03:00  INFO 7708 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : lancamentos - Start completed.
+2023-10-05T10:43:33.747-03:00  INFO 7708 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:lancamentos'
+2023-10-05T10:43:33.970-03:00  INFO 7708 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-05T10:43:34.033-03:00  INFO 7708 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-05T10:43:34.036-03:00  INFO 7708 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-05T10:43:34.225-03:00  INFO 7708 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T10:43:34.402-03:00  INFO 7708 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-05T10:43:34.776-03:00  INFO 7708 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-05T10:43:35.282-03:00  INFO 7708 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05T10:43:35.328-03:00  INFO 7708 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-05T10:43:35.607-03:00  INFO 7708 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-10-05T10:43:36.138-03:00  WARN 7708 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-05T10:43:36.887-03:00  INFO 7708 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-05T10:43:36.895-03:00  INFO 7708 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-05T10:43:37.020-03:00  INFO 7708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/lancamentos'
+2023-10-05T10:43:37.038-03:00  INFO 7708 --- [restartedMain] c.n.lancamentos.LancamentosApplication   : Started LancamentosApplication in 5.792 seconds (process running for 6.587)
+2023-10-05T10:43:37.194-03:00  INFO 7708 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[.[localhost].[/lancamentos]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-05T10:43:37.195-03:00  INFO 7708 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-05T10:43:37.197-03:00  INFO 7708 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-10-05T10:44:35.804-03:00  INFO 7708 --- [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 250 ms
+2023-10-05T10:45:03.767-03:00  WARN 7708 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.nayaragaspar.lancamentos.exception.NotFoundException: Conta não encontrado]
