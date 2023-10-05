@@ -16,12 +16,14 @@ import com.nayaragaspar.lancamentos.model.entity.Cliente;
 import com.nayaragaspar.lancamentos.service.ClienteService;
 
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("cliente")
 @RequiredArgsConstructor
+@Tag(name = "Cliente")
 public class ClienteController {
     private final ClienteService clienteService;
 

@@ -12,11 +12,13 @@ import com.nayaragaspar.lancamentos.model.entity.Transacao;
 import com.nayaragaspar.lancamentos.service.TransacaoService;
 
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("transacao")
 @RequiredArgsConstructor
+@Tag(name = "Transações")
 public class TransacaoController {
     private final TransacaoService transacaoService;
 
