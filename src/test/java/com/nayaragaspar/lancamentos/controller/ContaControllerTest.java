@@ -57,7 +57,7 @@ public class ContaControllerTest {
 
     @Test
     @Order(1)
-    @DisplayName("Teste salvar conta")
+    @DisplayName("Teste salvar cliente / conta")
     void testSalvarConta() throws JsonMappingException, JsonProcessingException {
         SalvarClienteDto clienteDto = new SalvarClienteDto("Cliente Um", "12345678910", "um@gmail.com", "");
         var contentCliente = given().spec(specification)
